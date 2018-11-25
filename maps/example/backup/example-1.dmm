@@ -168,7 +168,7 @@
 	id_tag = "example_shuttle_port";
 	pixel_x = -28
 	},
-/obj/item/weapon/spacecash,
+/obj/effect/shuttle_landmark/lower_level,
 /turf/simulated/floor/plating,
 /area/shuttle/escape)
 "C" = (

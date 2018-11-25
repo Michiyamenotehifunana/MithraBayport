@@ -6789,7 +6789,7 @@
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
 "oJ" = (
-/obj/item/weapon/card/id/torch,
+/obj/turbolift_map_holder/torch,
 /turf/unsimulated/mask,
 /area/hallway/primary/fifthdeck/fore)
 "oL" = (

@@ -570,41 +570,24 @@
 	base_turf = /turf/unsimulated/floor/rescue_base
 
 // Elevator areas.
-/area/turbolift/torch_top
+/area/turbolift/untitled_top
 	name = "lift (bridge)"
 	lift_floor_label = "Bridge"
 	lift_floor_name = "Bridge"
-	lift_announce_str = "Arriving at Command Deck: Bridge. Meeting Room. Command Offices. AI Core. Landing Area. Auxiliary EVA."
+	lift_announce_str = "Arriving at Command Deck."
 
-/area/turbolift/torch_fourth
+
+/area/turbolift/untitled_middle
 	name = "lift (first deck)"
 	lift_floor_label = "Deck 1"
-	lift_floor_name = "Operations Deck"
-	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Research Wing. Auxiliary Cryogenic Storage. Emergency Armory."
+	lift_floor_name = "Supply Deck"
+	lift_announce_str = "Arriving at Operations Deck."
 
-/area/turbolift/torch_third
+/area/turbolift/untitled_ground
 	name = "lift (second deck)"
 	lift_floor_label = "Deck 2"
-	lift_floor_name = "Maintenance Deck"
-	lift_announce_str = "Arriving at Maintenance Deck: Engineering. Atmospherics. Sanitation. Storage."
-
-/area/turbolift/torch_second
-	name = "lift (third deck)"
-	lift_floor_label = "Deck 3"
-	lift_floor_name = "Habitation Deck"
-	lift_announce_str = "Arriving at Habitation Deck: EVA. Telecommunications. Mess Hall. Officer's Mess. Lounge. Diplomatic Quarters. Hydroponics. Cryogenic Storage. Holodeck. Gym."
-
-/area/turbolift/torch_first
-	name = "lift (fourth deck)"
-	lift_floor_label = "Deck 4"
-	lift_floor_name = "Supply Deck"
-	lift_announce_str = "Arriving at Supply Deck: Shuttle Docks. Pathfinder's Office. Cargo Storage. Supply Office. Laundry."
-
-/area/turbolift/torch_ground
-	name = "lift (fifth deck)"
-	lift_floor_label = "Deck 5"
 	lift_floor_name = "Hangar Deck"
-	lift_announce_str = "Arriving at Hangar Deck: Main Hangar. Supply Warehouse. Expedition Preparation. Mineral Processing."
+	lift_announce_str = "Arriving at Hangar Deck."
 	base_turf = /turf/simulated/floor
 
 // Command
