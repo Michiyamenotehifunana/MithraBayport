@@ -83,6 +83,7 @@
 
 	#include "colony_areas.dm"
 	#include "colony_define.dm"
+	#include "snowflakestuff.dm"
 
 	#include "mithracolony-0.dmm"
 	#include "torch-6.dmm"

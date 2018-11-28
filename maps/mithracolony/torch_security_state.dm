@@ -1,4 +1,4 @@
-/datum/map/torch // setting the map to use this list
+/datum/map/colony // setting the map to use this list
 	security_state = /decl/security_state/default/torchdept
 
 //Torch map alert levels. Refer to security_state.dm.

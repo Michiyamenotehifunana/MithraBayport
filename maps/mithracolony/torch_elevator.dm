@@ -1,4 +1,4 @@
-/obj/turbolift_map_holder/torch
+/obj/turbolift_map_holder/colony
 	name = "Torch turbolift map placeholder"
 	depth = 6
 	lift_size_x = 4

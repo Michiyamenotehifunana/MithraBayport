@@ -1,26 +1,28 @@
 /datum/map/colony
-	name = "Torch"
-	full_name = "SEV Torch"
+	name = "Mithra"
+	full_name = "NSB Mithra"
 	path = "colony"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 
+	station_levels = list(1)
 	admin_levels = list(7,8)
 	empty_levels = list(9)
-	accessible_z_levels = list("1"=1,"2"=3,"3"=1,"4"=1,"5"=1,"6"=1,"9"=30)
-	overmap_size = 35
-	overmap_event_areas = 34
-	usable_email_tlds = list("torch.ec.scg", "torch.fleet.mil", "freemail.net", "torch.scg")
+	accessible_z_levels = list("9"=30)
+	overmap_size = 15
+	overmap_event_areas = 14
+	usable_email_tlds = list("freemail.net")
 
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "SEV Torch"
-	station_short = "Torch"
+	station_name  = "NSB Mithra"
+	station_short = "Mithra"
 	dock_name     = "TBD"
 	boss_name     = "Expeditionary Command"
 	boss_short    = "Command"
 	company_name  = "Sol Central Government"
 	company_short = "SolGov"
+	system_name = "Azhura-Mazda"
 
 	map_admin_faxes = list("Corporate Central Office")
 
@@ -35,21 +37,18 @@
 	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
 	num_exoplanets = 1
-	planet_size = list(129,129)
+	planet_size = list(75,75)
 
-	away_site_budget = 3
+	away_site_budget = 2
 	id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'
 
-/datum/map/torch/setup_map()
+/datum/map/colony/setup_map()
 	..()
-	system_name = generate_system_name()
 	minor_announcement = new(new_sound = sound('sound/AI/torch/commandreport.ogg', volume = 45))
 
-/datum/map/torch/map_info(victim)
+/datum/map/colony/map_info(victim)
 	to_chat(victim, "<h2>Current map information</h2>")
-	to_chat(victim, "You're aboard the <b>[station_name]</b>, an Expeditionary Corps vessel. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way.")
-	to_chat(victim, "The vessel is staffed with a mix of SCG government personnel and hired contractors.")
-	to_chat(victim, "This area of space is uncharted, away from SCG territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector.")
+	to_chat(victim, "You're in the <b>[station_name]</b>, a outpost established on Armaiti to exploit its resources.")
 /*
 /datum/map/torch/send_welcome()
 	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>SEV Torch</b> Sensor Readings:</font><br>"

@@ -2,7 +2,7 @@
 	branch = /datum/mil_branch/civilian
 	rank =   /datum/mil_rank/civ/civ
 
-/datum/map/torch
+/datum/map/colony
 	branch_types = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet,
